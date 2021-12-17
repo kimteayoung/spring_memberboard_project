@@ -39,9 +39,6 @@
 
 #회원 정보 상세조회 가능
 
------완료 사이트 링크 
-
-http://localhost:8081/member/logout
 
 -----DB 테이블
 
