@@ -64,28 +64,28 @@ http://localhost:8081/member/logout
 
 
 
-mysql 테이블
-create table memberboard_table(
-	m_number bigint auto_increment,
+----mysql 테이블
+
+   create table memberboard_table(
+    m_number bigint auto_increment,
     m_id varchar(20),
     m_pw varchar(20),
     m_name varchar(20),
     m_email varchar(30),
 	constraint primary key(m_number));
     
-select * from memberboard_table;
+  select * from memberboard_table;
     
-    create table memberboard_table2(
-   b_number bigint auto_increment,
+   create table memberboard_table2(
+    b_number bigint auto_increment,
     b_writer varchar(10),
     b_title varchar(30),
     b_hits int default 0,
     b_contentsl varchar(2000),
-    -- 시간 날짜!!
     b_date timestamp not null default current_timestamp,
     constraint primary key(b_number));
     
-select * from memberboard_table2;
+  select * from memberboard_table2;
     
     create table memberboard_table3(
       c_number bigint auto_increment,
@@ -95,7 +95,7 @@ select * from memberboard_table2;
       c_date datetime,
       constraint primary key(c_number));
     
-select * from memberboard_table3;
+  select * from memberboard_table3;
 
 
 
