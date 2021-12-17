@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="Comment"> 
+    <insert id="save" parameterType="cdto">
+       insert into memberboard_table3(b_number, c_writer, c_contentsl, c_date) 
+          values(#{b_number},#{c_writer},#{c_contentsl},now())
+    </insert>
+    
+    <select id="findAll" parameterType="long" resultType="cdto">
+       select * from memberboard_table3 where b_number= #{b_number}
+    </select>
+ </mapper>
